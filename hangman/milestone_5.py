@@ -21,6 +21,12 @@ class Hangman:
         Hangman takes two optional arguments:
         - word_list, from which a word is chosen at random,
         - num_lives, which defaults to 5.
+
+        Words in a word list may contain non alphabetical characters, such as
+        a space or a hyphen, but may not contain any underscores. This condition
+        is not enforced but will render a positive outcome impossible.
+        Non alphabetical characters will be displayed as is and not be part of
+        the guessing.
         '''
         self._word_list = word_list
         self.full_num_lives = num_lives
