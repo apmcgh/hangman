@@ -6,6 +6,12 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 # Lessons learnt
 Discovered the assignement expression `:=`.
 
+The project instructions did not lead to a complete hangman gameplay, so
+I tookthe liberty to add a few essential features.
+
+In a commercial environment, any lack of clarity would have to be resolved with the relevant stakeholders
+so as to make sure that the product responds to actual requirements and expectations.
+
 # Installation instructions
 Pre-requisites:
 - Python, conda, git must be installed, configured and working.
@@ -13,28 +19,22 @@ Pre-requisites:
 
 Installation:
 - Clone this repo.
-- `conda create -n <<env name>>`
-
-Note: for a start conda is not really useful as I use the default python version and only standard libraries. But in future we may need it.
 
 # Usage instructions
-Pre-requisites:
+You may try a few sample games with:
 
-    conda activate <<env name>>
+    python hangman/milestone_5.py
 
-Milestone 2, early version of hangman:
+Or `from milestone_5 import Hangman` in your own python file, in the `hangman` directory and use the following options to play a game:
 
-    python hangman/milestone_2.py
-
-Milestone 3, letter guess handling:
-
-    python hangman/milestone_3.py
-
-Milestone 4, refactor to a class:
-
-    python hangman/milestone_4.py
+    <your variable> = Hangman(<optional word list>, <optional number of lives>)
+    <your variable>.play(<optional word list>)
+    # Note that a word list is necessary in one of the first two calls,otherwise play will raise an exception.
 
 # File structure of the project
+
+The `word_lists` module provides different possible word lists in the form of a dictionary indexed by categories.   
+The `milestone_5` module provides some samples of full game play if invoked directly, it can be called as a library.
 
 # License
 Copyleft
