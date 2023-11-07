@@ -64,6 +64,27 @@ word_lists = {
         "weeping willow", "wheat", "wisteria", "yew", "yucca", "zinnia",
     ],
 
+    "flowers": [
+        "acacia", "ageratum", "allium", "alstroemeria", "amaranthus", "amaryllis", "anemone", "angelonia",
+        "anthurium", "aster", "astilbe", "azalea", "baby's breath", "begonia", "bellflower", "bird of paradise",
+        "black-eyed Susan", "bleeding heart", "bluebell", "bougainvillea", "buttercup", "calendula",
+        "calla lily", "camellia", "canna", "carnation", "catmint", "celosia", "chamomile", "cherry blossom",
+        "chrysanthemum", "clematis", "columbine", "coneflower", "coreopsis", "cornflower", "cosmos",
+        "crocus", "cyclamen", "daffodil", "dahlia", "daisy", "dame's rocket", "delphinium", "dianthus",
+        "dusty miller", "edelweiss", "fairy primrose", "flamingo flower", "flax", "forget-me-not", "forsythia",
+        "foxglove", "freesia", "fuchsia", "gardenia", "geranium", "gerbera", "gladiolus", "globe amaranth",
+        "globe thistle", "goldenrod", "gypsophila", "hawthorn", "heather", "hibiscus", "hollyhock",
+        "honeysuckle", "hydrangea", "hyacinth", "ice plant", "impatiens", "iris", "ixora", "jacob's ladder",
+        "jasmine", "joe-pye weed", "kalanchoe", "kangaroo paw", "lantana", "larkspur", "lavender",
+        "lilac", "lily", "lily of the valley", "lisianthus", "lupine", "magnolia", "marigold", "mimosa",
+        "morning glory", "narcissus", "nasturtium", "oleander", "orchid", "ornamental kale", "pansy",
+        "passion flower", "peony", "periwinkle", "petunia", "phlox", "plumeria", "poppy", "primrose",
+        "queen anne's lace", "ranunculus", "rhododendron", "rose", "rosemary", "rudbeckia", "sage",
+        "salvia", "scabiosa", "snapdragon", "snowdrop", "statice", "stock", "sunflower", "sweet pea",
+        "sweet william", "tansy", "thistle", "tiger lily", "tulip", "verbena", "veronica", "violet",
+        "waxflower", "wisteria", "yarrow", "zinnia",
+    ],
+
     "shelters": [
         "apartment", "bungalow", "cabin", "castle", "chalet", "chateau", "condominium", "cottage", "dome",
         "duplex", "farmhouse", "flat", "fort", "hacienda", "hut", "igloo", "lodge", "loft", "mansion",
@@ -75,5 +96,19 @@ word_lists = {
         "sod house", "dogtrot house", "log cabin", "adobe house", "cliff dwelling", "caravan", "houseboat",
         "camper", "recreational vehicle", "beach hut", "summer house", "greenhouse", "gazebo", "outhouse",
         "pueblo", "schoolhouse", "firehouse", "jailhouse", "courthouse", "pumphouse", "grange hall",
+    ],
+
+    "vehicles": [
+        "sedan", "coupe", "convertible", "hatchback", "station wagon", "SUV", "crossover", "pickup truck",
+        "van", "minivan", "cargo van", "box truck", "motorcycle", "scooter", "moped", "bicycle",
+        "mountain bike", "road bike", "BMX bike", "tricycle", "quad bike", "go-kart", "golf cart",
+        "tractor", "forklift", "dump truck", "garbage truck", "fire engine", "ambulance", "police cruiser",
+        "limousine", "RV", "camper van", "motorhome", "school bus", "shuttle bus", "coach", "trolley",
+        "streetcar", "tram", "train", "light rail vehicle", "subway car", "tank", "armored car",
+        "snowmobile", "snowcat", "hovercraft", "jet ski", "speedboat", "sailboat", "yacht", "fishing boat",
+        "canoe", "kayak", "rowing boat", "gondola", "cruise ship", "freighter", "aircraft carrier",
+        "fighter jet", "helicopter", "glider", "biplane", "airliner", "drone", "hot air balloon",
+        "blimp", "space shuttle", "bobsled", "luge", "skateboard", "roller skates", "inline skates",
+        "wheelchair", "handcycle", "rickshaw", "horse carriage", "bullock cart", "dog sled",
     ],
 }
