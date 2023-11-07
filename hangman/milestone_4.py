@@ -27,33 +27,38 @@ class Hangman:
         self.word_guessed = ['_' for letter in self.word_to_be_guessed]
 
         self.list_of_guesses = []
-        self.num_letters_remaining = self._compute_num_letters_remaining()
-
-
-    def _compute_num_letters_remaining(self):
-        '''
-        Computes the number of unique letters yet to be guessed.
-        '''
-        return len(
-            set(list(self.word_to_be_guessed))
-            - set(self.list_of_guesses)
-        )
+        self.num_letters_remaining = len(set(list(self.word_to_be_guessed)))
 
 
     def check_guess(self, letter):
-        if letter_is_in_word := (letter in self.word_to_be_guessed):
+        '''
+        Given thee user hazarded a guess of a letter,
+        check whether the guessed letter is in the word to be guessed,
+        either way, do the relevant computations & display adequate messages.
+        '''
+        if letter in self.word_to_be_guessed:
             print(f"Good guess! {letter} is in the word.")
 
             for idx, letter_in_word in enumerate(self.word_to_be_guessed):
                 if letter_in_word == letter:
                     self.word_guessed[idx] = letter
-        else:
-            print(f"Sorry, {letter} is not in the word. Try again.")
 
-        return letter_is_in_word
+            self.num_letters_remaining -= 1
+        else:
+            self.num_lives -= 1
+            print(f"Sorry, {letter} is not in the word. Try again.")
+            print(f"You have {self.num_lives} lives left.")
 
 
     def ask_for_input(self):
+        '''
+        Get the user to input their guesses, a single letter at a time.
+
+        TODO: this function is work in progress, it needs:
+        - handling valid guesses (in the word or not)
+          to display the status of the gamee (letters guessed, blanks remaining)
+        - handling the end of game (win or lose)
+        '''
         while True:
             letter_guess = input("Please guess a letter: ").lower()
 
@@ -63,13 +68,20 @@ class Hangman:
                 print("You already tried that letter!")
             else:
                 self.list_of_guesses.append(letter_guess)
-                self.check_guess(letter_guess):
-                #if self.check_guess(letter_guess):
-                #    break
+                self.check_guess(letter_guess)
+                break
 
 
     def play(self):
-        self.ask_for_input()
+        while self.num_lives > 0 and self.num_letters_remaining > 0:
+            self.ask_for_input()
+
+            # DEBUG DATA:
+            print(self.word_to_be_guessed)
+            print(self.word_guessed)
+            print(self.num_letters_remaining)
+            print(self.list_of_guesses)
+            print(self.num_lives)
 
 
 hangman = Hangman(word_lists.word_lists["fruits"])

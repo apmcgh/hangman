@@ -30,6 +30,10 @@ Milestone 3, letter guess handling:
 
     python hangman/milestone_3.py
 
+Milestone 4, refactor to a class:
+
+    python hangman/milestone_4.py
+
 # File structure of the project
 
 # License
